@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Filmzoeker</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <script defer type="text/javascript"  src="../js/movies.js"> </script>
+    <script defer type="text/javascript" src="../js/filmzoeker_script.js">  </script>
+</head>
+<body>
+
+        <h1 class = "website-title">Welkom bij de Winc Filmzoeker</h1>
+
+        <ul class="flex-container">
+            <li class ="flex-container__search-movie-with-text">
+                <input type="text" class="flex-container__inputfield-search-term">
+                <button class = "flex-container__search-button">Zoek</button></li>
+            <li>
+                <button class = "flex-container__random-search-button">Toon willekeurige film</button></li>
+
+            <li class="flex-container__latest-movie"> 
+            <input type="radio" id="latestFilms" name="film-filter" value="latestFilms" class = "checked" checked>
+            <label for="latest">Laatste Films, 2014 of nieuwer</label></li>
+     
+            <li class="flex-container__avenger-films">  
+            <input type="radio" id="avengerFilms" name="film-filter" value="avengerFilms">
+            <label for="avenger">Avenger Films</label></li>
+     
+            <li class="flex-container__xmen-films">  
+            <input type="radio" id="x-menFilms" name="film-filter" value="x-menFilms">
+            <label for="xmen">X-Men Films</label></li>
+
+            <li class="flex-container__princess-films">  
+            <input type="radio" id="princessFilms" name="film-filter" value="princessFilms">
+            <label for="princess">Princess Films</label></li>
+     
+            <li class="flex-container__batman-films">  
+            <input type="radio" id="batmanFilms" name="film-filter" value="batmanFilms">
+            <label for="batman">Batman Films</label></li>   
+            
+        </ul>
+        <div>
+            <ul class = "grid-container" id = "movieList"> </ul>
+        </div>
+        <div>
+            <ul class = "no-movies-to-show"> </ul>
+        </div>
+
+</body>
+</html>
+
+

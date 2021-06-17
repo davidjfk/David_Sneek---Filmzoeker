@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+$font-family: "Open Sans";
+$background-color: black;
+$tekst-color: white;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: $background-color;
+  padding-inline-start: 5px;
+  padding-inline-end: 5px;
+}
+
+.website-title {
+  text-align: center;
+  font-family: $font-family;
+  font-size: 1.2em;
+  color: $tekst-color;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
+  font-family: $font-family;
+  color: $tekst-color;
+  font-size: 13px;
+  list-style-type: none;
+  &__search-movie-with-text {
+    margin-bottom: 5px;
+  }
+  &__inputfield-search-term {
+    width: 170px;
+    font-size: 1em;
+    border: 1px solid white;
+  }
+  &__search-button,
+  &__random-search-button {
+    font-family: $font-family;
+    font-size: 13px;
+    color: $tekst-color;
+    background-color: $background-color;
+    border: 1px solid white;
+    border-radius: 3px;
+  }
+  &__search-button {
+    margin-left: 10px;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  grid-auto-rows: 240px;
+  &__movie__link {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.no-movies-to-show {
+  color: $tekst-color;
+  padding: 10px;
+}
+
+@media screen and (min-width: 439px) {
+  .website-title {
+    font-size: 1.5em;
+  }
+
+  .flex-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-size: 14px;
+    &__inputfield-search-term {
+      width: 200px;
+    }
+    &__search-button,
+    &__random-search-button {
+      margin-right: 10px;
+      font-size: 14px;
+    }
+    &__latest-movie,
+    &__avenger-films,
+    &__xmen-films,
+    &__princess-films,
+    &__batman-films {
+      margin-right: 20px;
+    }
+  }
+
+  .grid-container {
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-rows: 300px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .website-title {
+    font-size: 1.7em;
+  }
+
+  .flex-container {
+    font-size: 16px;
+    &__inputfield-search-term {
+      width: 380px;
+    }
+    &__search-button,
+    &__random-search-button {
+      font-size: 16px;
+    }
+  }
+
+  .grid-container {
+    grid-gap: 12px;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    grid-auto-rows: 340px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .website-title {
+    font-size: 1.9em;
+  }
+
+  .flex-container {
+    font-size: 18px;
+    &__search-button,
+    &__random-search-button {
+      font-size: 18px;
+    }
+  }
+
+  .grid-container {
+    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 560px;
+  }
+}

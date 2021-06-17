@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: black;
+  -webkit-padding-start: 5px;
+          padding-inline-start: 5px;
+  -webkit-padding-end: 5px;
+          padding-inline-end: 5px;
+}
+
+.website-title {
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 1.2em;
+  color: white;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
+  font-family: "Open Sans";
+  color: white;
+  font-size: 13px;
+  list-style-type: none;
+}
+.flex-container__search-movie-with-text {
+  margin-bottom: 5px;
+}
+.flex-container__inputfield-search-term {
+  width: 170px;
+  font-size: 1em;
+  border: 1px solid white;
+}
+.flex-container__search-button, .flex-container__random-search-button {
+  font-family: "Open Sans";
+  font-size: 13px;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 3px;
+}
+.flex-container__search-button {
+  margin-left: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  grid-auto-rows: 240px;
+}
+.grid-container__movie__link {
+  width: 100%;
+  height: 100%;
+}
+
+.no-movies-to-show {
+  color: white;
+  padding: 10px;
+}
+
+@media screen and (min-width: 439px) {
+  .website-title {
+    font-size: 1.5em;
+  }
+
+  .flex-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-size: 14px;
+  }
+  .flex-container__inputfield-search-term {
+    width: 200px;
+  }
+  .flex-container__search-button, .flex-container__random-search-button {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  .flex-container__latest-movie, .flex-container__avenger-films, .flex-container__xmen-films, .flex-container__princess-films, .flex-container__batman-films {
+    margin-right: 20px;
+  }
+
+  .grid-container {
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-rows: 300px;
+  }
+}
+@media screen and (min-width: 650px) {
+  .website-title {
+    font-size: 1.7em;
+  }
+
+  .flex-container {
+    font-size: 16px;
+  }
+  .flex-container__inputfield-search-term {
+    width: 380px;
+  }
+  .flex-container__search-button, .flex-container__random-search-button {
+    font-size: 16px;
+  }
+
+  .grid-container {
+    grid-gap: 12px;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    grid-auto-rows: 340px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .website-title {
+    font-size: 1.9em;
+  }
+
+  .flex-container {
+    font-size: 18px;
+  }
+  .flex-container__search-button, .flex-container__random-search-button {
+    font-size: 18px;
+  }
+
+  .grid-container {
+    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 560px;
+  }
+}/*# sourceMappingURL=style.css.map */
