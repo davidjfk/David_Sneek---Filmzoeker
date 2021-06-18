@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Filmzoeker</title>
-    <link rel="stylesheet" href="../style/style.css">
-    <script defer type="text/javascript"  src="../js/movies.js"> </script>
-    <script defer type="text/javascript" src="../js/filmzoeker_script.js">  </script>
+    <link rel="stylesheet" href="./style/style.css">
+    <script defer type="text/javascript"  src="./js/movies.js"> </script>
+    <script defer type="text/javascript" src="./js/filmzoeker_script.js">  </script>
 </head>
 <body>
 
@@ -20,8 +20,12 @@
             <li>
                 <button class = "flex-container__random-search-button">Toon willekeurige film</button></li>
 
+            <li class="flex-container__all-movies"> 
+            <input type="radio" id="allFilms" name="film-filter" value="allFilms" checked>
+            <label for="all">Alle films</label></li>
+
             <li class="flex-container__latest-movie"> 
-            <input type="radio" id="latestFilms" name="film-filter" value="latestFilms" class = "checked" checked>
+            <input type="radio" id="latestFilms" name="film-filter" value="latestFilms">
             <label for="latest">Laatste Films, 2014 of nieuwer</label></li>
      
             <li class="flex-container__avenger-films">  
